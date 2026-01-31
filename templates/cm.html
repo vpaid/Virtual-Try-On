@@ -1,0 +1,333 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 59%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i> ...CONFUSION MATRIX... <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div></center>
+<br>
+<br>
+<br>
+
+<!-- <div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<ul class="nav nav-pills mb-3" role="tablist" style="background-color: black;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" data-bs-toggle="pill" href="#primary-pills-home" role="tab" aria-selected="true">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Home</div>
+            </div>
+        </a>
+    </li> -->
+    <!-- <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-profile" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Profile</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-contact" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-microphone font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Contact</div>
+            </div>
+        </a>
+    </li> -->
+<!-- </ul>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+
+
+<br> -->
+    
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="primary-pills-home" role="tabpanel">
+        <div class="col">
+            <div class="color-indigators d-flex align-items-center gap-2", style="padding-bottom: 1%;">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                                <div class="color-indigator-item bg-warning"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-dan"></div> 
+                                <div class="color-indigator-item bg-primary"></div> 
+                </div>
+        </div>
+        <br>
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="../static/images/python images/cm11.png" height="220" class="card-img">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+
+                        <p style="text-align: justify;">The confusion matrix is a matrix used to determine the performance of the classification models for a given set of test data. It can only be determined if the true values for test data are known. The matrix itself can be easily understood, but the related terminologies may be confusing. Since it shows the errors in the model performance in the form of a matrix, hence also known as an error matrix. Some features of Confusion matrix are given below:
+
+                        </p></div>
+                </div>
+            </div>
+        <br>
+            <div class="color-indigators d-flex align-items-center gap-2">
+                <div class="color-indigator-item bg-primary"></div> 
+                <div class="color-indigator-item bg-danger"></div> 
+                <div class="color-indigator-item bg-success"></div> 
+                <div class="color-indigator-item bg-warning"></div> 
+            </div>
+<br>
+            <div class="progress mb-3" style="height:5px;">
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+            </div>
+            
+<br>
+<br>
+<br>
+<div class="list-group-item" style="padding-top: 3%;">
+    <div class="row g-0" style="padding-left: 2%;">
+    
+                    <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp;For the 2 prediction classes of classifiers, the matrix is of 2*2 table, for 3 classes, it is 3*3 table, and so on.</p>
+</div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <div class="row g-0" style="padding-left: 2%;">
+    
+                    <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;The matrix is divided into two dimensions, that are predicted values and actual values along with the total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number of predictions.</p>
+</div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <div class="row g-0" style="padding-left: 2%;">
+    
+                    <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp;Predicted values are those values, which are predicted by the model, and actual values are the true values for &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the given observations.</p>
+</div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <div class="row g-0" style="padding-left: 2%;">
+    
+                    <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp;It looks like the below table:</p>
+</div>
+</div>
+<div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+    <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+            <img src="../static/images/python images/cm1.png", width="730", height="190">
+</h6>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p style="text-align: justify;">The above table has the following cases:
+    </p></div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; True Negative :-</button></p>
+                        <p style="padding-left: 8%;">Model has given prediction No, and the real or actual value was also No.</p>
+    </div>
+    </div> 
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; True Positive :-</button></p>
+                        <p style="padding-left: 8%;">The model has predicted yes, and the actual value was also true.</p>
+    </div>
+    </div> 
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; False Negative :-</button></p>
+                        <p style="padding-left: 8%;">The model has predicted no, but the actual value was Yes, it is also called as Type-II error.</p>
+    </div>
+    </div> 
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; False Positive :-</button></p>
+                        <p style="padding-left: 8%;">The model has predicted Yes, but the actual value was No. It is also called a Type-I error.</p>
+    </div>
+    </div> 
+<bR>
+<br>
+    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Need for Confusion Matrix in Machine learning....!</h3>
+    </div>    
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;It evaluates the performance of the classification models, when they make predictions on test data, and tells &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;how good our classification model is. </p>
+    </div>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;It not only tells the error made by the classifiers but also the type of errors such as it is either type-I or type-II &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;error. </p>
+    </div>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;With the help of the confusion matrix, we can calculate the different parameters for the model, such as accuracy, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;precision, etc.</p>
+    </div>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <p style="text-align: justify;"><b>Example :-</b> We can understand the confusion matrix using an example.
+    </p></div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <p style="text-align: justify;">Suppose we are trying to create a model that can predict the result for the disease that is either a person has that disease or not. So, the confusion matrix for this is given as:
+    </p></div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/cm2.png", width="700", height="240">
+    </h6>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <p style="text-align: justify;">From the above example, we can conclude that:
+    </p></div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+    <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;The table is given for the two-class classifier, which has two predictions "Yes" and "NO." Here, Yes defines that &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;patient has the disease, and No defines that patient does not has that disease.  </p>
+    </div>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;The classifier has made a total of 100 predictions. Out of 100 predictions, 89 are true predictions, and 11 are &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;incorrect predictions.  </p>
+    </div>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;The model has given prediction "yes" for 32 times, and "No" for 68 times. Whereas the actual "Yes" was 27, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;actual "No" was 73 times. </p>
+    </div>
+    </div>
+<bR>
+<br>
+   <div class="progress-bar" role="progressbar" style="width: 84%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Calculations using Confusion Matrix....!</h3>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <p style="text-align: justify;">We can perform various calculations for the model, such as the model's accuracy, using this matrix. These calculations are given below :-
+    </p></div>
+            <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">
+            
+                            <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; Classification Accuracy :-</button></p>
+                            <p style="padding-left: 8%;">It is one of the important parameters to determine the accuracy of the classification problems. It defines how often the model predicts the correct output. It can be calculated as the ratio of the number of correct predictions made by the classifier to all number of predictions made by the classifiers. The formula is given below:</p>
+        </div>
+        </div>
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/cm33.png", width="700", height="100">
+        </h6>
+        </div> 
+        <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">
+            
+                            <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; Misclassification rate :-</button></p>
+                            <p style="padding-left: 8%;">It is also termed as Error rate, and it defines how often the model gives the wrong predictions. The value of error rate can be calculated as the number of incorrect predictions to all number of the predictions made by the classifier. The formula is given below :-</p>
+        </div>
+        </div> 
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/cm4.png", width="700", height="100">
+        </h6>
+        </div> 
+        <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">
+            
+                            <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; Precision :-</button></p>
+                            <p style="padding-left: 8%;">It can be defined as the number of correct outputs provided by the model or out of all positive classes that have predicted correctly by the model, how many of them were actually true. It can be calculated using the below formula:</p>
+        </div>
+        </div> 
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/cm7.png", width="700", height="100">
+        </h6>
+        </div> 
+        <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">
+            
+                            <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; F-measure :-</button></p>
+                            <p style="padding-left: 8%;">If two models have low precision and high recall or vice versa, it is difficult to compare these models. So, for this purpose, we can use F-score. This score helps us to evaluate the recall and precision at the same time. The F-score is maximum if the recall is equal to the precision. It can be calculated using the below formula :-</p>
+        </div>
+        </div> 
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/cm6.png", width="700", height="100">
+        </h6>
+        </div> 
+        <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">
+            
+                            <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; Recall :-</button></p>
+                            <p style="padding-left: 8%;">It is defined as the out of total positive classes, how our model predicted correctly. The recall must be as high as possible. :-</p>
+        </div>
+        </div> 
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/cm5.png", width="700", height="100">
+        </h6>
+        </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- <div class="tab-pane fade" id="primary-pills-profile" role="tabpanel">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+        </div>
+        <div class="tab-pane fade" id="primary-pills-contact" role="tabpanel">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+        </div> -->
+        </div>   
+        
+        
+            
+        <br> 
+        {% endblock %}

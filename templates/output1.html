@@ -1,0 +1,74 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 39%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Comparision... !!<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div></center>
+<br>
+<br>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Correlation Matrix... !!<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div>
+<div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+    <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+            <img src="data:image/png;base64,{{ corr }}", width="800", height="450">
+</h6>
+</div>
+
+<br>
+<br>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 38%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Accuracy... !!<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div>
+<div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+    <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+        <img src="data:image/png;base64,{{ acc  }}", width="500", height="450">
+</h6>
+</div>
+
+<br>
+<br>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 38%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>F1 Score... !!<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div>
+<div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+    <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+        <img src="data:image/png;base64,{{ f1  }}", width="500", height="450">
+</h6>
+</div>
+
+<br>
+<br>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 38%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>ROC CURVE... !!<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div>
+<div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+    <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+            <img src="data:image/png;base64,{{ roc  }}", width="500", height="450">
+    </h6>
+</div>
+
+<br>
+<br>
+<!-- <div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Confusion Matrix... !!<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div>
+<div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+    <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+            <img src="data:image/png;base64,{{ img }}", width="600", height="450">
+</h6>
+</div> -->
+<br>
+{% endblock %}

@@ -1,0 +1,316 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i> ...ROC... <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div></center>
+<br>
+<br>
+<br>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<ul class="nav nav-pills mb-3" role="tablist" style="background-color: black;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" data-bs-toggle="pill" href="#primary-pills-home" role="tab" aria-selected="true">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Home</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-profile" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Profile</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-contact" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-microphone font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Contact</div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+
+
+<br>
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="primary-pills-home" role="tabpanel">
+        <div class="col">
+            <div class="color-indigators d-flex align-items-center gap-2", style="padding-bottom: 1%;">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                                <div class="color-indigator-item bg-warning"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-dan"></div> 
+                                <div class="color-indigator-item bg-primary"></div> 
+                </div>
+        </div>
+        <br>
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="../static/images/python images/r1.png" height="270" class="card-img">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+
+                        <p style="text-align: justify;">In Machine Learning, only developing an ML model is not sufficient as we also need to see whether it is performing well or not. It means that after building an ML model, we need to evaluate and validate how good or bad it is, and for such cases, we use different Evaluation Metrics. AUC-ROC curve is such an evaluation metric that is used to visualize the performance of a classification model. It is one of the popular and important metrics for evaluating the performance of the classification model. In this topic, we are going to discuss more details about the AUC-ROC curve.
+
+                        </p></div>
+                </div>
+            </div>
+        <br>
+            <div class="color-indigators d-flex align-items-center gap-2">
+                <div class="color-indigator-item bg-primary"></div> 
+                <div class="color-indigator-item bg-danger"></div> 
+                <div class="color-indigator-item bg-success"></div> 
+                <div class="color-indigator-item bg-warning"></div> 
+            </div>
+
+<br>
+<br>
+<br>
+    <div class="progress-bar" role="progressbar" style="width: 34%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>ROC Curve....!</h3>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <p style="text-align: justify;">ROC or Receiver Operating Characteristic curve represents a probability graph to show the performance of a classification model at different threshold levels. The curve is plotted between two parameters, which are:
+        </p></div>
+        <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">
+            
+                            <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; True Positive Rate or TPR</button></p>
+        </div>
+        </div>    
+        <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">
+            
+                            <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; False Positive Rate or FPR</button></p>
+        </div>
+        </div>    
+        <div class="list-group-item" style="padding-top: 3%;">
+            <p style="text-align: justify;">In the curve, TPR is plotted on Y-axis, whereas FPR is on the X-axis.
+            </p></div>
+        <div class="list-group-item" style="padding-top: 3%;">
+            <p style="text-align: justify;"><button class="btn btn-light" >1.&nbsp;&nbsp;&nbsp; TPR :- </button>
+                      </p></div>    
+         <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">                  
+                    <p style="text-align: justify;"> TPR or True Positive rate is a synonym for Recall, which can be calculated as:</p>
+            </div>
+        </div>    
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/r2.png", width="900", height="190">
+        </h6>
+        </div> 
+        <div class="list-group-item" style="padding-top: 3%;">
+            <p style="text-align: justify;"><button class="btn btn-light" >2.&nbsp;&nbsp;&nbsp; FPR :- </button>
+                      </p></div>    
+         <div class="list-group-item" style="padding-top: 3%;">
+            <div class="row g-0" style="padding-left: 2%;">                  
+                    <p style="text-align: justify;"> FPR or False Positive Rate can be calculated as:</p>
+            </div>
+        </div>    
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/r3.png", width="900", height="190">
+        </h6>
+        </div> 
+        <div class="list-group-item" style="padding-top: 3%;">
+            <p style="text-align: justify; padding-left: 5%;">Here, TP: True Positive
+                <br>
+                <br>
+                FP: False Positive
+                <br>
+                <br>
+                TN: True Negative
+                <br>
+                <br>
+                FN: False Negative
+                <br>
+                <br>
+                Now, to efficiently calculate the values at any threshold level, we need a method, which is AUC.
+            </p>
+        </div>
+        <br>
+        <br>
+            <div class="progress-bar" role="progressbar" style="width: 71%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>AUC: Area Under the ROC curve....!</h3>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <p style="text-align: justify;">ROC or Receiver Operating Characteristic curve represents a probability graph to show the performance of a classification model at different threshold levels. The curve is plotted between two parameters, which are:
+                </p></div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                            <img src="../static/images/python images/r4.png", width="500", height="350">
+                </h6>
+                </div>         
+            <div class="list-group-item" style="padding-top: 3%;">
+                <p style="text-align: justify;">In the ROC curve, AUC computes the performance of the binary classifier across different thresholds and provides an aggregate measure. The value of AUC ranges from 0 to 1, which means an excellent model will have AUC near 1, and hence it will show a good measure of Separability.
+           </p></div>            
+    
+           <br>
+           <br>
+               <div class="progress-bar" role="progressbar" style="width: 53%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                   <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>When to Use AUC-ROC....?</h3>
+               </div>    
+               <div class="list-group-item" style="padding-top: 3%;">
+                <div class="row g-0" style="padding-left: 2%;">
+                
+                                <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; AUC is used to measure how well the predictions are ranked instead of giving their absolute values. Hence, we can say AUC is Scale-Invariant.</button></p>
+            </div>
+            </div>    
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="row g-0" style="padding-left: 2%;">
+                
+                                <p style="text-align: justify;"> <button class="btn btn-light" ><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; It measures the quality of predictions of the model without considering the selected classification threshold. It means AUC is classification-threshold-invariant.</button></p>
+            </div>
+            </div>    
+            <br>
+            <br>
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>How AUC-ROC curve can be used for the Multi-class Model....?</h3>
+                </div>      
+                <div class="list-group-item" style="padding-top: 3%;">
+                    <p style="text-align: justify;">Although the AUC-ROC curve is only used for binary classification problems, we can also use it for multiclass classification problems. For multi-class classification problems, we can plot N number of AUC curves for N number of classes with the One vs ALL method.
+                        <br>
+                        <br>
+                        For example, if we have three different classes, X, Y, and Z, then we can plot a curve for X against Y & Z, a second plot for Y against X & Z, and the third plot for Z against Y and X.
+               </p></div>                    
+               <br>
+               <br>
+                   <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                       <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Applications of AUC-ROC Curve....!</h3>
+                   </div>
+                   <div class="list-group-item" style="padding-top: 3%;">
+                <p style="text-align: justify;">Although the AUC-ROC curve is used to evaluate a classification model, it is widely used for various applications. Some of the important applications of AUC-ROC are given below :-
+               </p></div>                 
+               <div class="list-group-item">
+                <div class="row g-0">
+                    <div class="col-md-auto">
+                        <div class="input-group mb-1" style="padding-top: 15%;">
+                            <button class="btn btn-light" >1. &nbsp;Classification of 3D model :-</button> 
+                            
+                        </div>
+                
+                    </div>
+                    <div class="col-md-10" style="padding-left: 2%;">
+                        <div class="card-body">
+            
+                                <p style="text-align: justify;">The curve is used to classify a 3D model and separate it from the normal models. With the specified threshold level, the curve classifies the non-3D and separates out the 3D models.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-group-item">
+                    <div class="row g-0">
+                        <div class="col-md-auto">
+                            <div class="input-group mb-1" style="padding-top: 15%;">
+                                <button class="btn btn-light" >2. &nbsp;Healthcare :-</button> 
+                                
+                            </div>
+                    
+                        </div>
+                        <div class="col-md-10" style="padding-left: 2%;">
+                            <div class="card-body">
+                
+                                    <p style="text-align: justify;">The curve has various applications in the healthcare sector. It can be used to detect cancer disease in patients. It does this by using false positive and false negative rates, and accuracy depends on the threshold value used for the curve.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item">
+                        <div class="row g-0">
+                            <div class="col-md-auto">
+                                <div class="input-group mb-1" style="padding-top: 15%;">
+                                    <button class="btn btn-light" >3. &nbsp;Binary Classification :-</button> 
+                                    
+                                </div>
+                        
+                            </div>
+                            <div class="col-md-10" style="padding-left: 2%;">
+                                <div class="card-body">
+                    
+                                        <p style="text-align: justify;">AUC-ROC curve is mainly used for binary classification problems to evaluate their performance.</p></div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+        </div>
+        <div class="tab-pane fade" id="primary-pills-profile" role="tabpanel">
+            <br>
+        <br>        
+   <form class="was-validated" method="POST" action="{{url_for('comp_result')}}" enctype="multipart/form-data" style="padding-left: 3%;">
+        <div class="mb-3">
+            <label for="formFile" class="form-label" id="validationFormCheck3"><button class="btn btn-light">Select your DataSet for KNN</button></label>
+          <br>
+
+            <input  name="dataset" type="file" id="formFile" class="form-control is-invalid" id="validationFormCheck3" required>
+        </div>
+        <br>
+        <br>
+
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter target column number</button></label>
+            <input type="number" name="target" class="form-control is-invalid" id="validationFormCheck2" required>
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter test size</button></label>
+            <input type="number" name="test" class="form-control is-invalid" id="validationFormCheck3" required>
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter the value of K</button></label>
+            <input type="number" name="k" class="form-control is-invalid" id="validationFormCheck1" required>
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter the value of depth</button></label>
+            <input type="number" name="depth" class="form-control is-invalid" id="validationFormCheck1" required>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-12">
+            <button class="btn btn-light" type="submit" ><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Check your data's Accuracy<i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+        </div>
+
+
+
+    </form>
+    
+        
+        
+        
+        </div>
+
+
+
+        </div>   
+        
+        
+            
+        <br> 
+        {% endblock %}

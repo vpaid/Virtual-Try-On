@@ -1,0 +1,284 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 54%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Linear Regression... !!</h3>
+    </div>
+</div></center>
+<br>
+<br>
+<br>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<ul class="nav nav-pills mb-3" role="tablist" style="background-color: black;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" data-bs-toggle="pill" href="#primary-pills-home" role="tab" aria-selected="true">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Home</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-profile" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Profile</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-contact" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-microphone font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Contact</div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+
+
+<br>
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="primary-pills-home" role="tabpanel">
+        <div class="col">
+            <div class="color-indigators d-flex align-items-center gap-2", style="padding-bottom: 1%;">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                                <div class="color-indigator-item bg-warning"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-dan"></div> 
+                                <div class="color-indigator-item bg-primary"></div> 
+                </div>
+        </div>
+        <br>
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="../static/images/python images/l1.png" height="260" class="card-img">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+
+                        <p style="text-align: justify;">Linear regression is one of the easiest and most popular Machine Learning algorithms. It is a statistical method that is used for predictive analysis. Linear regression makes predictions for continuous/real or numeric variables such as sales, salary, age, product price, etc.
+
+                            Linear regression algorithm shows a linear relationship between a dependent (y) and one or more independent (y) variables, hence called as linear regression. Since linear regression shows the linear relationship, which means it finds how the value of the dependent variable is changing according to the value of the independent variable.
+                            
+                            The linear regression model provides a sloped straight line representing the relationship between the variables. Consider the below image:
+                            </p></div>
+                    
+                    
+                </div>
+            </div>
+            <br>
+            <div class="color-indigators d-flex align-items-center gap-2">
+                                <div class="color-indigator-item bg-primary"></div> 
+                                <div class="color-indigator-item bg-danger"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-warning"></div> 
+                                           
+            </div>
+    
+            <br>
+            <br>
+    
+            
+            
+            <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-spinner'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Types of Linear Regression...!</h3>
+            </div>
+            <ul class="list-group list-group-flush" >
+                <li class="list-group-item" style="padding-top: 3%;"><h5>1.<i>&nbsp;</i><i>&nbsp;</i><u>Simple Linear Regression</u> :-</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a single independent variable is used to predict the value of a numerical dependent variable, then such a Linear &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regression algorithm is called Simple Linear Regression.</li>
+                <li class="list-group-item" style="padding-top: 3%;"><h5>2.<i>&nbsp;</i><i>&nbsp;</i><u>Multiple Linear regression</u> :-</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If more than one independent variable is used to predict the value of a numerical dependent variable, then such a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linear Regression algorithm is called Multiple Linear Regression. </li>
+
+            </ul>
+            <br>
+            <br>
+            <div class="progress-bar" role="progressbar" style="width: 56%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-spinner'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Linear Regression Line...!</h3>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                
+                <p>
+                    A linear line showing the relationship between the dependent and independent variables is called a regression line. A regression line can show two types of relationship:
+                </p>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h6 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Positive Linear Relationship :-</h6>
+                </div>
+                <br>
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../static/images/python images/l2.png" height="160" width="" class="card-img">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+        
+                                <p style="text-align: justify;">If the dependent variable increases on the Y-axis and independent variable increases on X-axis, then such a relationship is termed as a Positive linear relationship.
+                                </p></div>
+                            
+                            
+                        </div>
+                    </div>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h6 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Negative Linear Relationship :-</h6>
+                </div>
+                <br>
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../static/images/python images/l3.png" height="160" width="" class="card-img">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+        
+                                <p style="text-align: justify;">If the dependent variable decreases on the Y-axis and independent variable increases on the X-axis, then such a relationship is called a negative linear relationship.
+                                </p></div>
+                            
+                            
+                        </div>
+                    </div>
+            </div>
+                
+            <br>
+            <br>
+            <div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-spinner'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Assumptions of Linear Regression...!</h3>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                
+                <p>
+                    Below are some important assumptions of Linear Regression. These are some formal checks while building a Linear Regression model, which ensures to get the best possible result from the given dataset.
+                </p>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h6 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Linear relationship between the features and target :-</h6>
+                </div>
+                <br>
+                <div class="row g-0" style="padding-left: 5%;">
+                
+                                <p style="text-align: justify;">Linear regression assumes the linear relationship between the dependent and independent variables.
+                                </p>
+            </div>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h6 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Small or no multicollinearity between the features :-</h6>
+                </div>
+                <br>
+                <div class="row g-0" style="padding-left: 5%;">
+                
+                                <p style="text-align: justify;">Multicollinearity means high-correlation between the independent variables. Due to multicollinearity, it may difficult to find the true relationship between the predictors and target variables. Or we can say, it is difficult to determine which predictor variable is affecting the target variable and which is not. So, the model assumes either little or no multicollinearity between the features or independent variables.                                </p>
+            </div>
+            </div>            
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="progress-bar" role="progressbar" style="width: 43%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h6 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Homoscedasticity Assumption: :-</h6>
+                </div>
+                <br>
+                <div class="row g-0" style="padding-left: 5%;">
+                
+                                <p style="text-align: justify;">Homoscedasticity is a situation when the error term is the same for all the values of independent variables. With homoscedasticity, there should be no clear pattern distribution of data in the scatter plot.</p>
+            </div>
+            </div>            
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h6 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Normal distribution of error terms: :-</h6>
+                </div>
+                <br>
+                <div class="row g-0" style="padding-left: 5%;">
+                
+                                <p style="text-align: justify;">Linear regression assumes that the error term should follow the normal distribution pattern. If error terms are not normally distributed, then confidence intervals will become either too wide or too narrow, which may cause difficulties in finding coefficients.
+                                    It can be checked using the q-q plot. If the plot shows a straight line without any deviation, which means the error is normally distributed.</p>
+            </div>
+            </div>            
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h6 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>No autocorrelations :-</h6>
+                </div>
+                <br>
+                <div class="row g-0" style="padding-left: 5%;" >
+                
+                                <p style="text-align: justify;">The linear regression model assumes no autocorrelation in error terms. If there will be any correlation in the error term, then it will drastically reduce the accuracy of the model. Autocorrelation usually occurs if there is a dependency between residual errors.</p>
+            </div>
+            </div>            
+    
+    
+    
+    
+    </p>
+                
+            
+</div>
+<div class="tab-pane fade" id="primary-pills-profile" role="tabpanel">
+    <br>
+    <br>        
+<form class="was-validated" method="POST" action="{{url_for('linreg_result')}}" enctype="multipart/form-data" style="padding-left: 3%;">
+    <div class="mb-3">
+        <label for="formFile" class="form-label" id="validationFormCheck3"><button class="btn btn-light">Select your DataSet for Linear Regreesion</button></label>
+      <br>
+
+        <input  name="dataset" type="file" id="formFile" class="form-control is-invalid" id="validationFormCheck3" required>
+    </div>
+    <br>
+    <br>
+    <div class="mb-3">
+        <label class="form-label" ><button class="btn btn-light">Enter the value of u</button></label>
+        <input type="number" name="pr" class="form-control is-invalid" id="validationFormCheck1" required>
+    </div>
+    <br>
+    <br>
+    <div class="mb-3">
+        <label class="form-label" ><button class="btn btn-light">Enter First column number</button></label>
+        <input type="number" name="first" class="form-control is-invalid" id="validationFormCheck2" required>
+    </div>
+    <br>
+    <br>
+    <div class="mb-3">
+        <label class="form-label" ><button class="btn btn-light">Enter Second column number</button></label>
+        <input type="number" name="second" class="form-control is-invalid" id="validationFormCheck3" required>
+    </div>
+    <br>
+    <br>
+    <div class="mb-3">
+        <label class="form-label" ><button class="btn btn-light">Enter test size</button></label>
+        <input type="number" name="test" class="form-control is-invalid" id="validationFormCheck3" required>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="col-12">
+        <button class="btn btn-light" type="submit" ><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Check your data's Accuracy<i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+    </div>
+
+
+
+</form>
+
+
+
+
+
+
+</div>
+</div>   
+
+
+    
+<br> 
+{% endblock %}

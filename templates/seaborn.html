@@ -1,0 +1,372 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>SEABORN... !!</h3>
+    </div>
+</div></center>
+<br>
+<br>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<ul class="nav nav-pills mb-3" role="tablist" style="background-color: black;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" data-bs-toggle="pill" href="#primary-pills-home" role="tab" aria-selected="true">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Home</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-profile" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Python Tasks</div>
+            </div>
+        </a>
+    </li>
+
+</ul>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+
+
+<br>
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="primary-pills-home" role="tabpanel">
+        <div class="col">
+            <div class="color-indigators d-flex align-items-center gap-2", style="padding-bottom: 1%;">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                                <div class="color-indigator-item bg-warning"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-dan"></div> 
+                                <div class="color-indigator-item bg-primary"></div> 
+                </div>
+        </div>
+        <br>
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="../static/images/python images/s1.png" height="280" width="390" class="card-img">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+
+                        <p style="text-align: justify;">Seaborn is a library for making statistical graphics in Python. It builds on top of matplotlib and integrates closely with pandas data structures..Seaborn helps you explore and understand your data.Its plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots. Its dataset-oriented, declarative API lets you focus on what the different elements of your plots mean, rather than on the details of how to draw them.
+                            <br>
+                            </p></div>
+                    
+                    
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="color-indigators d-flex align-items-center gap-2">
+                                <div class="color-indigator-item bg-primary"></div> 
+                                <div class="color-indigator-item bg-danger"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-warning"></div> 
+                                           
+            </div>
+    
+            <br>
+            <br>
+    
+            
+            <div class="list-group-item" style="padding-top: 3%;">
+                <p>Here’s an example of what seaborn can do:</p>
+            </div>
+    
+            <div class="col">
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;"><i style="color: brown;"># Import seaborn</i>
+                        <br><i style="color: blue;">import</i> seaborn <i style="color: blue;">as</i> sns
+                        <br>
+                        <br><i style="color: brown;"># Apply the default theme</i>
+                        <br>sns.set_theme()
+                        <br>
+                        <br><i style="color: brown;"># Load an example dataset</i>
+                        <br>tips = sns.load_dataset(<i style="color: blue;">"tips"</i>)
+                        <br>
+                        <br><i style="color: brown;"># Create a visualization</i>
+                        <br>sns.relplot(
+                            <br> data=tips,
+                            <br>x=<i style="color: blue;">"total_bill"</i>, y=<i style="color: blue;">"tip"</i>, col=<i style="color: blue;">"time"</i>,
+                            <br>hue=<i style="color: blue;">"smoker"</i>, style=<i style="color: blue;">"smoker"</i>, size=<i style="color: blue;">"size"</i>,
+                            <br>)
+                            <br>
+                            <br>
+                            <br>
+        
+                            <img src="../static/images/python images/s2.png", width="800", height="400"></h6>
+                        </div>
+                        <br>
+                        <br>
+            </div>
+            <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-menu'> </i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>A high-level API for statistical graphics...!</h3>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <p>There is no universally best way to visualize data. Different questions are best answered by different plots. Seaborn makes it easy to switch between different visual representations by using a consistent dataset-oriented API.
+
+                  <br>
+                  <br>  The function relplot() is named that way because it is designed to visualize many different statistical relationships. While scatter plots are often effective, relationships where one variable represents a measure of time are better represented by a line. The relplot() function has a convenient kind parameter that lets you easily switch to this alternate representation:</p>
+            </div>
+            <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">dots = sns.load_dataset(<i style="color: blue;">"dots"</i>)
+                    <br>sns.relplot(
+                        <br>data=dots, kind=<i style="color: blue;">"line"</i>,
+                        <br>x=<i style="color: blue;">"time"</i>, y=<i style="color: blue;">"firing_rate"</i>, col=<i style="color: blue;">"align"</i>,
+                        <br>hue=<i style="color: blue;">"choice"</i>, size=<i style="color: blue;">"coherence"</i>, style=<i style="color: blue;">"choice"</i>,
+                        <br>facet_kws=<i style="color: blue;">dict</i>(sharex=<i style="color: blue;">False</i>),
+                        <br>)
+                        <br>
+                        <br>
+                        <br>
+                        <img src="../static/images/python images/s4.png", width="800", height="400">
+            </h6>
+            </div>   
+            <br>
+            <br>    
+            <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="45" aria-valuemin="34" aria-valuemax="0">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-menu'> </i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Statistical estimation...!</h3>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <p>Often, we are interested in the average value of one variable as a function of other variables. Many seaborn functions will automatically perform the statistical estimation that is necessary to answer these questions:            </p></div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">fmri = sns.load_dataset("fmri")
+                        <br>sns.relplot(
+                            <br>data=fmri, kind="line",
+                            <br>x="timepoint", y="signal", col="region",
+                            <br>hue="event", style="event",
+                            <br>)
+                            <br>
+                            <br>
+                            
+    
+                            <img src="../static/images/python images/s5.png", width="800", height="400">
+                </h6>
+                </div>    
+                <div class="list-group-item" style="padding-top: 3%;">
+                    <p>When statistical values are estimated, seaborn will use bootstrapping to compute confidence intervals and draw error bars representing the uncertainty of the estimate.
+
+                        Statistical estimation in seaborn goes beyond descriptive statistics. For example, it is possible to enhance a scatterplot by including a linear regression model (and its uncertainty) using lmplot():</p></div>
+                        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                            <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">sns.lmplot(data=tips, x="total_bill", y="tip", col="time", hue="smoker")      <br>
+                                    <br>
+                                    <br>
+                                    
+            
+                                    <img src="../static/images/python images/s6.png", width="800", height="400">
+                        </h6>
+                        </div>    
+                        <br>
+                        <br>
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="45" aria-valuemin="34" aria-valuemax="0">
+                            <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-menu'> </i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Distributional representations...!</h3>
+                </div>        
+                <div class="list-group-item" style="padding-top: 3%;">
+                    <p>Statistical analyses require knowledge about the distribution of variables in your dataset. The seaborn function displot() supports several approaches to visualizing distributions. These include classic techniques like histograms and computationally-intensive approaches like kernel density estimation:</p></div>
+                    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                        <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">sns.displot(data=tips, x="total_bill", col="time", kde=True)
+                                <br>
+                                <br>
+                                
+        
+                                <img src="../static/images/python images/s7.png", width="800", height="400">
+                    </h6>
+                    </div>    
+                    <div class="list-group-item" style="padding-top: 3%;">
+                        <p>Seaborn also tries to promote techniques that are powerful but less familiar, such as calculating and plotting the empirical cumulative distribution function of the data:</p></div>    
+                        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                            <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">sns.displot(data=tips, kind="ecdf", x="total_bill", col="time", hue="smoker", rug=True)
+                                    <br>
+                                    <br>
+                                    
+            
+                                    <img src="../static/images/python images/s8.png", width="800", height="400">
+                        </h6>
+                        </div>    
+                        <br>
+            <br>    
+            <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="45" aria-valuemin="34" aria-valuemax="0">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='lni lni-menu'> </i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Plots for categorical data...!</h3>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <p style="text-align: justify;">Several specialized plot types in seaborn are oriented towards visualizing categorical data. They can be accessed through catplot(). These plots offer different levels of granularity. At the finest level, you may wish to see every observation by drawing a “swarm” plot: a scatter plot that adjusts the positions of the points along the categorical axis so that they don’t overlap:     </p></div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">sns.catplot(data=tips, kind="swarm", x="day", y="total_bill", hue="smoker")
+                            <br>
+                            <br>
+                            <br>
+    
+                            <img src="../static/images/python images/s9.png", width="600", height="450">
+                </h6>
+                </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <p style="text-align: justify;">Or you could show only the mean value and its confidence interval within each nested category:
+
+                </p></div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">sns.catplot(data=tips, kind="bar", x="day", y="total_bill", hue="smoker")
+                            <br>
+                            <br>
+                            <br>
+    
+                            <img src="../static/images/python images/s10.png", width="700", height="450">
+                </h6>
+                </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </p>
+                
+            
+</div>
+<div class="tab-pane fade" id="primary-pills-profile" role="tabpanel">
+                <br>
+                <br>        
+           <form class="was-validated" method="POST" action="{{url_for('normal_distribution')}}" enctype="multipart/form-data" style="padding-left: 3%;">
+            <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Normal Distribution<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i></h3>
+            </div>    
+            <!-- <br>
+            <br>
+            <div class="mb-3">
+                    <label for="formFile" class="form-label" id="validationFormCheck3"><button class="btn btn-light">Select your DataSet for Matplotlib</button></label>
+                  <br>
+        
+                    <input  name="dataset" type="file" id="formFile" class="form-control is-invalid" id="validationFormCheck3" required>
+                </div> -->
+                <br>
+                <br>
+                <div class="mb-3">
+                    <label class="form-label" ><button class="btn btn-light">Enter First Array</button></label>
+                    <input type="text" name="n" class="form-control is-invalid" id="validationFormCheck3" required>
+                </div>
+                <br>
+                <br>
+                <div class="mb-3">
+                    <label class="form-label" ><button class="btn btn-light">Enter Second Array</button></label>
+                    <input type="text" name="y" class="form-control is-invalid" id="validationFormCheck3" required>
+                </div>
+                <br>
+                <br>
+                <br>
+            <div class="col-12">
+                <button class="btn btn-light" type="submit" ><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Check your Output<i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+            </div>
+            
+    
+    
+        </form>
+                <br>
+                <br>
+                <br>
+                <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Binomial Distribution<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i></h3>
+                </div>    
+                <br>
+                <br>
+                <form class="was-validated" method="POST" action="{{url_for('binomial_distribution')}}" enctype="multipart/form-data" style="padding-left: 3%;">
+                <!-- <div class="mb-3"> -->
+                        <!-- <label for="formFile" class="form-label" id="validationFormCheck3"><button class="btn btn-light">Select your DataSet for Matplotlib</button></label>
+                      <br>
+            
+                        <input  name="dataset" type="file" id="formFile" class="form-control is-invalid" id="validationFormCheck3" required>
+                    </div>
+                    <br>
+                    <br> -->
+                    <div class="mb-3">
+                        <label class="form-label" ><button class="btn btn-light">Enter First Array</button></label>
+                        <input type="text" name="p" class="form-control is-invalid" id="validationFormCheck3" required>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="mb-3">
+                        <label class="form-label" ><button class="btn btn-light">Enter Second Array</button></label>
+                        <input type="text" name="q" class="form-control is-invalid" id="validationFormCheck3" required>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="mb-3">
+                        <label class="form-label" ><button class="btn btn-light">Enter third Array</button></label>
+                        <input type="text" name="r" class="form-control is-invalid" id="validationFormCheck3" required>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="col-12">
+                    <button class="btn btn-light" type="submit" ><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Check your Output<i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                </div>
+                
+        
+        
+            </form>
+                <br>
+                <br>
+                <br>
+                <div class="progress-bar" role="progressbar" style="width: 59%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                    <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>poisson's Distribution<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i></h3>
+                </div>    
+                <br>
+                <br>
+                <form class="was-validated" method="POST" action="{{url_for('poisson_distribution')}}" enctype="multipart/form-data" style="padding-left: 3%;">
+                <!-- <div class="mb-3">
+                        <label for="formFile" class="form-label" id="validationFormCheck3"><button class="btn btn-light">Select your DataSet for Matplotlib</button></label>
+                      <br>
+            
+                        <input  name="dataset" type="file" id="formFile" class="form-control is-invalid" id="validationFormCheck3" required>
+                    </div>
+                    <br>
+                    <br> -->
+                    <div class="mb-3">
+                        <label class="form-label" ><button class="btn btn-light">Enter First Array</button></label>
+                        <input type="text" name="a" class="form-control is-invalid" id="validationFormCheck3" required>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="mb-3">
+                        <label class="form-label" ><button class="btn btn-light">Enter Second Array</button></label>
+                        <input type="text" name="b" class="form-control is-invalid" id="validationFormCheck3" required>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="col-12">
+                    <button class="btn btn-light" type="submit" ><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Check your Output<i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                </div>
+                
+        
+        
+            </form>
+
+
+
+
+</div>
+
+</div>   
+
+
+
+
+<br> 
+{% endblock %}

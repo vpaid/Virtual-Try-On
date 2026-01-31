@@ -1,0 +1,356 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i> ...Agglomerative Clustering... <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div></center>
+<br>
+<br>
+<br>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<ul class="nav nav-pills mb-3" role="tablist" style="background-color: black;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" data-bs-toggle="pill" href="#primary-pills-home" role="tab" aria-selected="true">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Home</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-profile" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Profile</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-contact" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-microphone font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Contact</div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+
+
+<br>
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="primary-pills-home" role="tabpanel">
+        <div class="col">
+            <div class="color-indigators d-flex align-items-center gap-2", style="padding-bottom: 1%;">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                                <div class="color-indigator-item bg-warning"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-dan"></div> 
+                                <div class="color-indigator-item bg-primary"></div> 
+                </div>
+        </div>
+        <br>
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="../static/images/python images/ag1.jpg" height="230" class="card-img">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+
+                        <p style="text-align: justify;">The agglomerative hierarchical clustering algorithm is a popular example of HCA. To group the datasets into clusters, it follows the bottom-up approach. It means, this algorithm considers each dataset as a single cluster at the beginning, and then start combining the closest pair of clusters together. It does this until all the clusters are merged into a single cluster that contains all the datasets.
+
+                            This hierarchy of clusters is represented in the form of the dendrogram.</p></div>
+                </div>
+            </div>
+        <br>
+            <div class="color-indigators d-flex align-items-center gap-2">
+                <div class="color-indigator-item bg-primary"></div> 
+                <div class="color-indigator-item bg-danger"></div> 
+                <div class="color-indigator-item bg-success"></div> 
+                <div class="color-indigator-item bg-warning"></div> 
+            </div>
+
+<br>
+<br>
+<br>
+    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>How the Agglomerative Hierarchical clustering Work....?</h3>
+    </div>
+   
+    <div class="list-group-item">
+    <div class="row g-0">
+        <div class="col-md-auto">
+            <div class="input-group mb-1" style="padding-top: 15%;">
+                <button class="btn btn-light" >Step 1 :-</button> 
+                
+            </div>
+    
+        </div>
+        <div class="col-md-10" style="padding-left: 2%;">
+            <div class="card-body">
+
+                    <p style="text-align: justify;">Create each data point as a single cluster. Let's say there are N data points, so the number of clusters will also be N.</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/ag2.png", width="300", height="250">
+    </h6>
+    </div>    
+    <div class="list-group-item">
+        <div class="row g-0">
+            <div class="col-md-auto">
+                <div class="input-group mb-1" style="padding-top: 15%;">
+                    <button class="btn btn-light" >Step 2 :-</button> 
+                    
+                </div>
+        
+            </div>
+            <div class="col-md-10" style="padding-left: 2%;">
+                <div class="card-body">
+    
+                        <p style="text-align: justify;">Take two closest data points or clusters and merge them to form one cluster. So, there will now be N-1 clusters.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                    <img src="../static/images/python images/ag3.png", width="300", height="250">
+        </h6>
+        </div>
+        <div class="list-group-item">
+            <div class="row g-0">
+                <div class="col-md-auto">
+                    <div class="input-group mb-1" style="padding-top: 15%;">
+                        <button class="btn btn-light" >Step 3 :-</button> 
+                    </div>
+            
+                </div>
+                <div class="col-md-10" style="padding-left: 2%;">
+                    <div class="card-body">
+        
+                            <p style="text-align: justify;">Again, take the two closest clusters and merge them together to form one cluster. There will be N-2 clusters.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                        <img src="../static/images/python images/ag4.png", width="300", height="250">
+            </h6>
+            </div>    <div class="list-group-item">
+                <div class="row g-0">
+                    <div class="col-md-auto">
+                        <div class="input-group mb-1" style="padding-top: 15%;">
+                            <button class="btn btn-light" >Step 4 :-</button> 
+                            
+                        </div>
+                
+                    </div>
+                    <div class="col-md-10" style="padding-left: 2%;">
+                        <div class="card-body">
+            
+                                <p style="text-align: justify;">Repeat Step 3 until only one cluster left. So, we will get the following clusters. Consider the below images:</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                            <img src="../static/images/python images/ag5.png", width="300", height="250">
+                </h6>
+                </div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                            <img src="../static/images/python images/ag6.png", width="300", height="250">
+                </h6>
+                </div>
+                <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                    <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                            <img src="../static/images/python images/ag7.png", width="300", height="250">
+                </h6>
+                </div>
+                    <div class="list-group-item">
+                    <div class="row g-0">
+                        <div class="col-md-auto">
+                            <div class="input-group mb-1" style="padding-top: 15%;">
+                                <button class="btn btn-light" >Step 5 :-</button> 
+                                
+                            </div>
+                    
+                        </div>
+                        <div class="col-md-10" style="padding-left: 2%;">
+                            <div class="card-body">
+                
+                                    <p style="text-align: justify;">Once all the clusters are combined into one big cluster, develop the dendrogram to divide the clusters as per the problem.</p></div>
+                            </div>
+                        </div>
+                    </div>
+      <br>
+      <br>              
+     <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+         <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Measure for the distance between two clusters</h3>
+    </div>
+    <div class="list-group-item">
+        <div class="row g-0">
+            <div class="col-md-auto">
+                <div class="input-group mb-1" style="padding-top: 15%;">
+                    <button class="btn btn-light" >1.&nbsp;&nbsp;Single Linkage :-</button> 
+                    
+                </div>
+        
+            </div>
+            <div class="col-md-10" style="padding-left: 2%;">
+                <div class="card-body">
+    
+                        <p style="text-align: justify;">It is the Shortest Distance between the closest points of the clusters. Consider the below image:</p></div>
+                </div>
+            </div>
+        </div>        
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+                    <img src="../static/images/python images/ag8.png", width="300", height="250">
+        </h6>
+        </div>                              
+        <div class="list-group-item">
+            <div class="row g-0">
+                <div class="col-md-auto">
+                    <div class="input-group mb-1" style="padding-top: 15%;">
+                        <button class="btn btn-light" >2.&nbsp;&nbsp;Complete Linkage :-</button> 
+                        
+                    </div>
+            
+                </div>
+                <div class="col-md-10" style="padding-left: 2%;">
+                    <div class="card-body">
+        
+                            <p style="text-align: justify;">It is the farthest distance between the two points of two different clusters. It is one of the popular linkage methods as it forms tighter clusters than single-linkage.</p></div>
+                    </div>
+                </div>
+            </div>        
+            <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+                        <img src="../static/images/python images/ag9.png", width="300", height="250">
+            </h6>
+            </div>                              
+            <div class="list-group-item">
+                <div class="row g-0">
+                    <div class="col-md-auto">
+                        <div class="input-group mb-1" style="padding-top: 15%;">
+                            <button class="btn btn-light" >3.&nbsp;&nbsp;Average Linkage :-</button> 
+                            
+                        </div>
+                
+                    </div>
+                    <div class="col-md-10" style="padding-left: 2%;">
+                        <div class="card-body">
+                           <p style="text-align: justify;"> It is the linkage method in which the distance between each pair of datasets is added up and then divided by the total number of datasets to calculate the average distance between two clusters. It is also one of the most popular linkage methods.</p></div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="list-group-item">
+                    <div class="row g-0">
+                        <div class="col-md-auto">
+                            <div class="input-group mb-1" style="padding-top: 15%;">
+                                <button class="btn btn-light" >4.&nbsp;&nbsp;Centroid Linkage :-</button> 
+                                
+                            </div>
+                    
+                        </div>
+                        <div class="col-md-10" style="padding-left: 2%;">
+                            <div class="card-body">
+                
+                                    <p style="text-align: justify;">It is the linkage method in which the distance between the centroid of the clusters is calculated. Consider the below image:</p></div>
+                            </div>
+                        </div>
+                    </div>        
+                    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+                        <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+                                <img src="../static/images/python images/ag10.png", width="300", height="250">
+                    </h6>
+                    </div>                                                
+    <br>
+    <br>              
+     <div class="progress-bar" role="progressbar" style="width: 84%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"> 
+             <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Woking of Dendrogram in Hierarchical clustering....</h3>
+     </div>
+     <div class="list-group-item" style="padding-top: 3%;">
+        <p style="text-align: justify;">The dendrogram is a tree-like structure that is mainly used to store each step as a memory that the HC algorithm performs. In the dendrogram plot, the Y-axis shows the Euclidean distances between the data points, and the x-axis shows all the data points of the given dataset.
+            <br>
+            <br>
+            The working of the dendrogram can be explained using the below diagram :-
+        </p></div>
+        <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+            <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+                    <img src="../static/images/python images/ag12.png", width="770", height="350">
+        </h6>
+        </div>
+        <div class="list-group-item" style="padding-top: 3%;">
+            <p style="text-align: justify;">
+                In the above diagram, the left part is showing how clusters are created in agglomerative clustering, and the right part is showing the corresponding dendrogram.
+            </p></div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="row g-0" style="padding-left: 2%;">
+                
+                                <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp;As we have discussed above, firstly, the datapoints P2 and P3 combine together and form a cluster, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;correspondingly a dendrogram is created, which connects P2 and P3 with a rectangular shape. The hight is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decided according to the Euclidean distance between the data points.</p>
+            </div>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="row g-0" style="padding-left: 2%;">
+                
+                                <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; In the next step, P5 and P6 form a cluster, and the corresponding dendrogram is created. It is higher than of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;previous, as the Euclidean distance between P5 and P6 is a little bit greater than the P2 and P3. </p>
+            </div>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="row g-0" style="padding-left: 2%;">
+                
+                                <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; Again, two new dendrograms are created that combine P1, P2, and P3 in one dendrogram, and P4, P5, and P6, in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; another dendrogram. </p>
+            </div>
+            </div>
+            <div class="list-group-item" style="padding-top: 3%;">
+                <div class="row g-0" style="padding-left: 2%;">
+                
+                                <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp; At last, the final dendrogram is created that combines all the data points together.</p>
+            </div>
+            </div>    
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+</div>
+<div class="tab-pane fade" id="primary-pills-profile" role="tabpanel">
+    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+</div>
+<div class="tab-pane fade" id="primary-pills-contact" role="tabpanel">
+    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+</div>
+</div>   
+
+
+    
+<br> 
+{% endblock %}

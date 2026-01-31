@@ -1,0 +1,623 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 61%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Support Vector Machine... !!</h3>
+    </div>
+</div></center>
+<br>
+<br>
+<br>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<ul class="nav nav-pills mb-3" role="tablist" style="background-color: black;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" data-bs-toggle="pill" href="#primary-pills-home" role="tab" aria-selected="true">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Home</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-profile" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Profile</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-contact" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-microphone font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Contact</div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+
+
+<br>
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="primary-pills-home" role="tabpanel">
+        <div class="col">
+            <div class="color-indigators d-flex align-items-center gap-2", style="padding-bottom: 1%;">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                                <div class="color-indigator-item bg-warning"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-dan"></div> 
+                                <div class="color-indigator-item bg-primary"></div> 
+                </div>
+        </div>
+        <br>
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="../static/images/python images/svm111.png" height="360" class="card-img">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+
+                        <p style="text-align: justify;">Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms, which is used for Classification as well as Regression problems. However, primarily, it is used for Classification problems in Machine Learning.
+
+                            The goal of the SVM algorithm is to create the best line or decision boundary that can segregate n-dimensional space into classes so that we can easily put the new data point in the correct category in the future. This best decision boundary is called a hyperplane.
+                            
+                            SVM chooses the extreme points/vectors that help in creating the hyperplane. These extreme cases are called as support vectors, and hence algorithm is termed as Support Vector Machine. Consider the below diagram in which there are two different categories that are classified using a decision boundary or hyperplane:
+                            
+                            </p></div>
+                </div>
+            </div>
+        <br>
+            <div class="color-indigators d-flex align-items-center gap-2">
+                <div class="color-indigator-item bg-primary"></div> 
+                <div class="color-indigator-item bg-danger"></div> 
+                <div class="color-indigator-item bg-success"></div> 
+                <div class="color-indigator-item bg-warning"></div> 
+            </div>
+
+<br>
+<br>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p style="text-align: justify;"><b>Example:-</b> SVM can be understood with the example that we have used in the KNN classifier. Suppose we see a strange cat that also has some features of dogs, so if we want a model that can accurately identify whether it is a cat or dog, so such a model can be created by using the SVM algorithm. We will first train our model with lots of images of cats and dogs so that it can learn about different features of cats and dogs, and then we test it with this strange creature. So as support vector creates a decision boundary between these two data (cat and dog) and choose extreme cases (support vectors), it will see the extreme case of cat and dog. On the basis of the support vectors, it will classify it as a cat. Consider the below diagram:        
+    </p></div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/svm22.png", width="700", height="450">
+    </h6>
+    </div>
+    <br>
+    <br>
+    
+    <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Hyperplane and Support Vectors in the SVM :-</h3>
+    </div>
+    
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="progress-bar" role="progressbar" style="width: 21%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <h6 class="mb-0 text-uppercase" style="color: black; background-color: bisque;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Hyperplane :-</h6>
+        </div>
+        <br>
+        <div class="row g-0" style="padding-left: 5%;">
+        
+                        <p style="text-align: justify;"> There can be multiple lines/decision boundaries to segregate the classes in n-dimensional space, but we need to find out the best decision boundary that helps to classify the data points. This best boundary is known as the hyperplane of SVM.
+                            <br>
+                            <br>
+                            The dimensions of the hyperplane depend on the features present in the dataset, which means if there are 2 features (as shown in image), then hyperplane will be a straight line. And if there are 3 features, then hyperplane will be a 2-dimension plane.
+                            <br>
+                            <br>
+                            We always create a hyperplane that has a maximum margin, which means the maximum distance between the data points.
+                        </p>
+    </div>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="progress-bar" role="progressbar" style="width: 27%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <h6 class="mb-0 text-uppercase" style="color: black; background-color: bisque;"><i class='lni lni-pulse'></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Support Vectors :-</h6>
+        </div>
+        <br>
+        <div class="row g-0" style="padding-left: 5%;">
+        
+                        <p style="text-align: justify;">The data points or vectors that are the closest to the hyperplane and which affect the position of the hyperplane are termed as Support Vector. Since these vectors support the hyperplane, hence called a Support vector.</p>
+    </div>
+    </div>            
+   <br>
+   <br>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <br>
+<br>
+<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+    <h3 class="mb-0 text-uppercase" style="color: black; background-color: bisque;">1.&nbsp;&nbsp; Linear SVM</h3>
+</div>     
+<div class="list-group-item" style="padding-top: 3%;">
+    <p>Linear SVM is used for linearly separable data, which means if a dataset can be classified into two classes by using a single straight line, then such data is termed as linearly separable data, and classifier is used called as Linear SVM classifier.
+        <br>
+        <br>
+        The working of the SVM algorithm can be understood by using an example. Suppose we have a dataset that has two tags (green and blue), and the dataset has two features x1 and x2. We want a classifier that can classify the pair(x1, x2) of coordinates in either green or blue. Consider the below image:
+        <br>
+        <br>
+    </p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase">
+      
+                <img src="../static/images/python images/svm3.png", width="500", height="380"></h6>
+            </div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p>So as it is 2-d space so by just using a straight line, we can easily separate these two classes. But there can be multiple lines that can separate these classes. Consider the below image:
+        
+    </p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase">
+      
+                <img src="../static/images/python images/svm4.png", width="500", height="380"></h6>
+            </div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p>Hence, the SVM algorithm helps to find the best line or decision boundary; this best boundary or region is called as a hyperplane. SVM algorithm finds the closest point of the lines from both the classes. These points are called support vectors. The distance between the vectors and the hyperplane is called as margin. And the goal of SVM is to maximize this margin. The hyperplane with maximum margin is called the optimal hyperplane.  
+    </p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase">
+      
+                <img src="../static/images/python images/svm5.png", width="500", height="380"></h6>
+            </div>
+</div>
+<br>
+<br>
+<div class="progress-bar" role="progressbar" style="width: 34%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+    <h3 class="mb-0 text-uppercase" style="color: black; background-color: bisque;">2.&nbsp;&nbsp;Non Linear SVM</h3>
+</div>     
+<div class="list-group-item" style="padding-top: 3%;">
+    <p> Non-Linear SVM is used for non-linearly separated data, which means if a dataset cannot be classified by using a straight line, then such data is termed as non-linear data and classifier used is called as Non-linear SVM classifier.
+        <br>
+        <br>
+        If data is linearly arranged, then we can separate it by using a straight line, but for non-linear data, we cannot draw a single straight line. Consider the below image :
+        <br>
+        <br>
+    </p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase">
+      
+                <img src="../static/images/python images/svm6.png", width="500", height="380"></h6>
+            </div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p>So to separate these data points, we need to add one more dimension. For linear data, we have used two dimensions x and y, so for non-linear data, we will add a third dimension z. It can be calculated as:
+    </p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">z = x2 + y2 
+                </h6>
+    </div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p>By adding the third dimension, the sample space will become as below image :-
+    </p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase">
+      
+                <img src="../static/images/python images/svm7.png", width="500", height="380"></h6>
+            </div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p>So now, SVM will divide the datasets into classes in the following way. Consider the below image:</p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase">
+      
+                <img src="../static/images/python images/svm8.png", width="500", height="380"></h6>
+            </div>
+</div>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p>Since we are in 3-d Space, hence it is looking like a plane parallel to the x-axis. If we convert it in 2d space with z=1, then it will become as :-</p>
+</div>
+<div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 2%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase">
+      
+                <img src="../static/images/python images/svm9.png", width="400", height="350"></h6>
+            </div>
+</div>
+</div>
+<div class="tab-pane fade" id="primary-pills-profile" role="tabpanel">
+    <br>
+        <br>        
+   <form class="was-validated" method="POST" action="{{url_for('svm_result')}}" enctype="multipart/form-data" style="padding-left: 3%;">
+        <div class="mb-3">
+            <label for="formFile" class="form-label" id="validationFormCheck3"><button class="btn btn-light">Select your DataSet for SVM</button></label>
+          <br>
+
+            <input  name="dataset" type="file" id="formFile" class="form-control is-invalid" id="validationFormCheck3" required>
+        </div>
+        <br>
+        <br>
+        <!-- <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter the value of K</button></label>
+            <input type="number" name="k" class="form-control is-invalid" id="validationFormCheck1" required>
+        </div>
+        <br>
+        <br> -->
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter target column number</button></label>
+            <input type="number" name="target" class="form-control is-invalid" id="validationFormCheck2" required>
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter test size</button></label>
+            <input type="number" name="test" class="form-control is-invalid" id="validationFormCheck3" required>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-12">
+            <button class="btn btn-light" type="submit" ><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Check your data's Accuracy<i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+        </div>
+
+
+
+    </form>
+    
+
+
+
+</div>
+
+</div>   
+
+
+    
+<br> 
+{% endblock %}

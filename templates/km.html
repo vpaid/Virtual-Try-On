@@ -1,0 +1,362 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>K--Mean... !!</h3>
+    </div>
+</div></center>
+<br>
+<br>
+<br>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<ul class="nav nav-pills mb-3" role="tablist" style="background-color: black;">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" data-bs-toggle="pill" href="#primary-pills-home" role="tab" aria-selected="true">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-home font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Home</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-profile" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-user-pin font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Profile</div>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#primary-pills-contact" role="tab" aria-selected="false">
+            <div class="d-flex align-items-center">
+                <div class="tab-icon"><i class='bx bx-microphone font-18 me-1'></i>
+                </div>
+                <div class="tab-title">Contact</div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<div class="progress mb-3" style="height:5px;">
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: aqua;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+</div>
+
+
+
+<br>
+
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="primary-pills-home" role="tabpanel">
+        <div class="col">
+            <div class="color-indigators d-flex align-items-center gap-2", style="padding-bottom: 1%;">
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                                <div class="color-indigator-item bg-warning"></div> 
+                                <div class="color-indigator-item bg-success"></div> 
+                                <div class="color-indigator-item bg-dan"></div> 
+                                <div class="color-indigator-item bg-primary"></div> 
+                </div>
+        </div>
+        <br>
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="../static/images/python images/km11.jpg" height="360" class="card-img">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+
+                        <p style="text-align: justify;">K-Means Clustering is an Unsupervised Learning algorithm, which groups the unlabeled dataset into different clusters. Here K defines the number of pre-defined clusters that need to be created in the process, as if K=2, there will be two clusters, and for K=3, there will be three clusters, and so on.
+                            It allows us to cluster the data into different groups and a convenient way to discover the categories of groups in the unlabeled dataset on its own without the need for any training.
+
+                            It is a centroid-based algorithm, where each cluster is associated with a centroid. The main aim of this algorithm is to minimize the sum of distances between the data point and their corresponding clusters.
+                            The algorithm takes the unlabeled dataset as input, divides the dataset into k-number of clusters, and repeats the process until it does not find the best clusters. 
+                            </p></div>
+                </div>
+            </div>
+        <br>
+            <div class="color-indigators d-flex align-items-center gap-2">
+                <div class="color-indigator-item bg-primary"></div> 
+                <div class="color-indigator-item bg-danger"></div> 
+                <div class="color-indigator-item bg-success"></div> 
+                <div class="color-indigator-item bg-warning"></div> 
+            </div>
+
+<br>
+<br>
+<div class="list-group-item" style="padding-top: 3%;">
+    <p style="text-align: justify;">The k-means clustering algorithm mainly performs two tasks :-
+    </p></div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;&nbsp;Determines the best value for K center points or centroids by an iterative process.</p>
+    </div>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;Assigns each data point to its closest k-center. Those data points which are near to the particular k-center, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create a cluster.</p>
+    </div>
+    </div>    
+    <div class="list-group-item" style="padding-top: 3%;">
+        <p style="text-align: justify;">Hence each cluster has datapoints with some commonalities, and it is away from other clusters.
+            <br>
+            <br>
+                The below diagram explains the working of the K-means Clustering Algorithm:
+        </p>
+    </div>
+    
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km2.png", width="700", height="400">
+    </h6>
+    </div>
+    <br>
+    <br>
+    <div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>How does K--means algorithm work?<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-joomla-original'> </i></i></h3>
+    </div>
+    
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;"> 
+                            The Working process can be explained in the below steps and diagram :- </p>
+    </div>
+    </div>
+    <div>
+        <li class="list-group-item"><i class="lni lni-pointer-right"></i>&nbsp;&nbsp;&nbsp; <b style="color: aqua;">Step 1 :-</b>&nbsp;&nbsp;&nbsp;  Select the number K to decide the number of clusters..</li>
+        <li class="list-group-item"><i class="lni lni-pointer-right"></i>&nbsp;&nbsp;&nbsp; <b style="color: aqua;">Step 2 :-</b>&nbsp;&nbsp;&nbsp;  Select random K points or centroids. (It can be other from the input dataset).</li>
+        <li class="list-group-item"><i class="lni lni-pointer-right"></i>&nbsp;&nbsp;&nbsp; <b style="color: aqua;">Step 3 :-</b>&nbsp;&nbsp;&nbsp;  Assign each data point to their closest centroid, which will form the predefined K clusters.</li>
+        <li class="list-group-item"><i class="lni lni-pointer-right"></i>&nbsp;&nbsp;&nbsp; <b style="color: aqua;">Step 4 :-</b>&nbsp;&nbsp;&nbsp;  Calculate the variance and place a new centroid of each cluster.</li>
+        <li class="list-group-item"><i class="lni lni-pointer-right"></i>&nbsp;&nbsp;&nbsp; <b style="color: aqua;">Step 5 :-</b>&nbsp;&nbsp;&nbsp;  Repeat the third steps, which means reassign each datapoint to the new closest centroid of each &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cluster. </li>
+        <li class="list-group-item"><i class="lni lni-pointer-right"></i>&nbsp;&nbsp;&nbsp; <b style="color: aqua;">Step 6 :-</b>&nbsp;&nbsp;&nbsp;  If any reassignment occurs, then go to step-4 else go to FINISH.</li>
+        <li class="list-group-item"><i class="lni lni-pointer-right"></i>&nbsp;&nbsp;&nbsp; <b style="color: aqua;">Step 7 :-</b>&nbsp;&nbsp;&nbsp;  The model is ready.</li>
+    
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">Let's understand the above steps by considering the visual plots:
+                            <br>
+                            <br>
+                            Suppose we have two variables M1 and M2. The x-y axis scatter plot of these two variables is given below:
+        </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: left;">
+                <img src="../static/images/python images/km3.png", width="400", height="350">
+    </h6>
+    </div>
+    <br>
+    <br>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" >
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;Let's take number k of clusters, i.e., K=2, to identify the dataset and to put them into different clusters. It means &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;here we will try to group these datasets into two different clusters. </p>
+    </div>
+    </div> 
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" >
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;We need to choose some random k points or centroid to form the cluster. These points can be either the points &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from the dataset or any other point. So, here we are selecting the below two points as k points, which are not the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;part of our dataset. Consider the below image: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km4.png", width="400", height="350">
+    </h6>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" >
+        
+                        <p style="text-align: justify;"><i class="fadeIn animated bx bx-circle"></i>&nbsp;&nbsp;Now we will assign each data point of the scatter plot to its closest K-point or centroid. We will compute it by &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;applying some mathematics that we have studied to calculate the distance between two points. So, we will draw a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;median between both the centroids. Consider the below image: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km5.png", width="400", height="350">
+    </h6>
+    </div>
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">From the above image, it is clear that points left side of the line is near to the K1 or blue centroid, and points to the right of the line are close to the yellow centroid. Let's color them as blue and yellow for clear visualization.
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km5.png", width="400", height="350">
+    </h6>
+    </div> 
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">From the above image, it is clear that points left side of the line is near to the K1 or blue centroid, and points to the right of the line are close to the yellow centroid. Let's color them as blue and yellow for clear visualization.
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km6.png", width="400", height="350">
+    </h6>
+    </div> 
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">From the above image, it is clear that points left side of the line is near to the K1 or blue centroid, and points to the right of the line are close to the yellow centroid. Let's color them as blue and yellow for clear visualization.
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km6.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">As we need to find the closest cluster, so we will repeat the process by choosing a new centroid. To choose the new centroids, we will compute the center of gravity of these centroids, and will find new centroids as below:
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km7.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">Next, we will reassign each datapoint to the new centroid. For this, we will repeat the same process of finding a median line. The median will be like below image :-
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km8.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">From the above image, we can see, one yellow point is on the left side of the line, and two blue points are right to the line. So, these three points will be assigned to new centroids.
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km9.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">We will repeat the process by finding the center of gravity of centroids, so the new centroids will be as shown in the below image :-
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km12.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">As we got the new centroids so again will draw the median line and reassign the data points. So, the image will be
+                            :-
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km10.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">We can see in the above image; there are no dissimilar data points on either side of the line, which means our model is formed. Consider the below image: :-
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km15.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+    <div class="list-group-item" style="padding-top: 3%;">
+        <div class="row g-0" style="padding-left: 2%;">
+        
+                        <p style="text-align: justify;">As our model is ready, so we can now remove the assumed centroids, and the two final clusters will be as shown in the below image :-
+    </div>
+    </div>
+    <div class="progress-bar" role="progressbar" style="width: 100%; background-color: white; padding-left: 3%; padding-top: 1%; padding-bottom: 1%;" aria-valuenow="100" aria-valuemin="100" aria-valuemax="100">
+        <h6 class="mb-0 text-lowercase" style="color: black; text-align: center;">
+                <img src="../static/images/python images/km16.png", width="400", height="350">
+    </h6>
+    </div> 
+   
+
+
+
+
+
+
+
+</div>
+<div class="tab-pane fade" id="primary-pills-profile" role="tabpanel">
+    <br>
+        <br>        
+   <form class="was-validated" method="POST" action="{{url_for('km_result')}}" enctype="multipart/form-data" style="padding-left: 3%;">
+        <div class="mb-3">
+            <label for="formFile" class="form-label" id="validationFormCheck3"><button class="btn btn-light">Select your DataSet for KNN</button></label>
+          <br>
+
+            <input  name="dataset" type="file" id="formFile" class="form-control is-invalid" id="validationFormCheck3" required>
+        </div>
+        <br>
+        <br>
+        <!-- <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter the value of K</button></label>
+            <input type="number" name="k" class="form-control is-invalid" id="validationFormCheck1" required>
+        </div>
+        <br>
+        <br> -->
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter target column number</button></label>
+            <input type="number" name="target" class="form-control is-invalid" id="validationFormCheck2" required>
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+            <label class="form-label" ><button class="btn btn-light">Enter test size</button></label>
+            <input type="number" name="test" class="form-control is-invalid" id="validationFormCheck3" required>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-12">
+            <button class="btn btn-light" type="submit" ><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Check your data's Accuracy<i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+        </div>
+
+
+
+    </form>
+    
+
+</div>
+    </div>
+
+
+    
+<br> 
+{% endblock %}

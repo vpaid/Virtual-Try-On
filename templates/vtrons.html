@@ -1,0 +1,196 @@
+{% extends "admin_layout.html" %} 
+{% block content %}
+<br>
+<center><div class="col">
+    <div class="progress-bar" role="progressbar" style="width: 67%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+        <h3 class="mb-0 text-uppercase" style="color: aqua; background-color: black;"><i class='bx bx-spin'><i class='lni lni-slack'></i></i><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>Virtual Try On Glasses... !!<i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i><i class='bx bx-spin'><i class='lni lni-slack'></i></i></h3>
+    </div>
+</div></center>
+<br>
+<br>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5 product-grid">
+    <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+
+    <div class="col">
+        <div class="card">
+            <img src="../static/Glasses/glass1.png" class="card-img-top" alt="...">
+            <input class="form-label" id="formFileLg" type="hidden" name='k' value="1">
+
+            <br>
+            <div class="card-body">
+                <h6 class="card-title cursor-pointer" style="text-align: center;">Red colored Glass</h6> 
+            </div>
+            <br>
+            <br>
+
+            <div class="col-12" style="text-align: center;">
+                <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+            </div>
+            
+        </div>
+    </div>
+    </form>
+    <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+        <div class="col">
+            <div class="card">
+                <img src="../static/Glasses/glass2.png" class="card-img-top" alt="...">
+                <input class="form-label" id="formFileLg" type="hidden" name='k' value="2">
+                <br>
+                
+                <div class="card-body">
+                    <h6 class="card-title cursor-pointer" style="text-align: center;">Red Star Glass</h6> 
+                </div>
+                <br>
+                <br>
+    
+                <div class="col-12" style="text-align: center;">
+                    <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                </div>
+                
+            </div>
+        </div>
+        </form>
+        <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+            <div class="col">
+                <div class="card">
+                    <img src="../static/Glasses/glass5.png" class="card-img-top" alt="...">
+                    <input class="form-label" id="formFileLg" type="hidden" name='k' value="5">
+                    <div class="card-body">
+                        <h6 class="card-title cursor-pointer" style="text-align: center;">Black colored Glass</h6> 
+                    </div>
+                    <br>
+                    <br>        
+                    <div class="col-12" style="text-align: center;">
+                        <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+            </form>    
+            <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+                <div class="col">
+                    <div class="card">
+                        <img src="../static/Glasses/glass4.png" class="card-img-top" alt="...">\
+                        <input class="form-label" id="formFileLg" type="hidden" name='k' value="4">
+                        <div class="card-body">
+                            <h6 class="card-title cursor-pointer" style="text-align: center;">Swagg Glass</h6> 
+                        </div>
+                        <br>
+                        <br>
+            
+                        <div class="col-12" style="text-align: center;">
+                            <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+                </form>    
+                <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+                    <div class="col">
+                        <div class="card">
+                            <img src="../static/Glasses/glass3.png" class="card-img-top" alt="...">
+                            <input class="form-label" id="formFileLg" type="hidden" name='k' value="3">
+                            <br>
+                            <div class="card-body">
+                                <h6 class="card-title cursor-pointer" style="text-align: center;">Normal Framed Glass</h6> 
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-12" style="text-align: center;">
+                                <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </form>    
+                    <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+                        <div class="col">
+                            <div class="card">
+                                <img src="../static/Glasses/glass6.png" class="card-img-top" alt="...">
+                                <input class="form-label" id="formFileLg" type="hidden" name='k' value="6">
+                               <br>
+                               <br>
+                                <div class="card-body">
+                                    <h6 class="card-title cursor-pointer" style="text-align: center;">Grey colored Glass</h6> 
+                                </div>
+                                <br>
+                                <br>
+                                
+                                <div class="col-12" style="text-align: center;">
+                                    <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        </form>    
+                        <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="../static/Glasses/glass7.png" class="card-img-top" alt="..." style="padding-top: 18%;">
+                                    <input class="form-label" id="formFileLg" type="hidden" name='k' value="7">
+                                    <br>
+                                    <br>
+                                    <div class="card-body">
+                                        <h6 class="card-title cursor-pointer" style="text-align: center;">Blue colored Glass</h6> 
+                                    </div>
+                                    <br>
+                                    <br>
+                        
+                                    <div class="col-12" style="text-align: center;">
+                                        <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            </form>    
+                            <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/Glasses/glass8.png" class="card-img-top" alt="...">
+                                        <input class="form-label" id="formFileLg" type="hidden" name='k' value="8">
+                                        <div class="card-body">
+                                            <h6 class="card-title cursor-pointer" style="text-align: center;">Full Blacked Glass</h6> 
+                                        </div>
+                                        <br>
+                                        <br>
+                            
+                                        <div class="col-12" style="text-align: center;">
+                                            <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                </form>        
+                                <form class="was-validated" method="POST" action="{{url_for('goggles_result')}}" enctype="multipart/form-data">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/Glasses/glass12.jpeg" class="card-img-top" alt="..." height="200" style="padding-top: 8%;">
+                                        <input class="form-label" id="formFileLg" type="hidden" name='k' value="12">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <div class="card-body">
+                                            <h6 class="card-title cursor-pointer" style="text-align: center;">Green colored Glass</h6> 
+                                        </div>
+                                        <br>
+                                        <br>
+                            
+                                        <div class="col-12" style="text-align: center;">
+                                            <button class="btn btn-light" type="submit"><i class='lni lni-pointer-right'></i><i>&nbsp;</i> Try on <i>&nbsp;</i><i>&nbsp;</i><i class='lni lni-pointer-left'></i></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                </form>                                    
+</div>
+
+
+
+
+
+
+
+
+<br> 
+{% endblock %}
